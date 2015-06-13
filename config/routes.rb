@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   get 'items/new' => 'items#new'
   get 'items/:id' => 'items#show'
   get 'items/' => 'items#index'
+  get 'items/:id/edit' => 'items#edit'
   post '/items' => 'items#create'
+  patch 'items/:id' => 'items#update'
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
