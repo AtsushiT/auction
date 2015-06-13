@@ -12,9 +12,11 @@
 </p> -->
 <p>
 <%# ”＝”がないのは、HTMLに出力しないから %>
+<ul>
 <% @items.each do |item| %>
   <li>
     <a href="/items/<%= item.id %>"><%= item.name %></a>
   </li>
 <% end -%>
+</ul>
 </p>
