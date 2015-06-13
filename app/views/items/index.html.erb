@@ -1,0 +1,20 @@
+<h1>出品商品一覧</h1>
+<!-- <p>
+  <li>
+    <a href="/items/<%= @items[0].id %>"><%= @items[0].name %></a>
+  </li>
+  <li>
+    <a href="/items/<%= @items[1].id %>"><%= @items[1].name %></a>
+  </li>
+  <li>
+    <a href="/items/<%= @items[2].id %>"><%= @items[2].name %></a>
+  </li>
+</p> -->
+<p>
+<%# ”＝”がないのは、HTMLに出力しないから %>
+<% @items.each do |item| %>
+  <li>
+    <a href="/items/<%= item.id %>"><%= item.name %></a>
+  </li>
+<% end -%>
+</p>
